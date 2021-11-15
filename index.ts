@@ -15,11 +15,12 @@ const plan = [
   "############################",
 ];
 
-function Vector(x, y) {
+function Vector(x: any, y: any) {
   this.x = x;
   this.y = y;
 }
 
-Vector.prototype.plus = function (that) {
+Vector.prototype.plus = function (that: any) {
+  // @ts-ignore
   return new Vector(this.x + that.x, this.y + that.y);
 };
