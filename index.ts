@@ -21,5 +21,5 @@ function Vector(x, y) {
 }
 
 Vector.prototype.plus = function (that) {
-  return new Vector(this.x, that.x, this.y + that.y);
+  return new Vector(this.x + that.x, this.y + that.y);
 };
