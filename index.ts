@@ -16,7 +16,9 @@ const plan = [
 ];
 
 function Vector(x: any, y: any) {
+  // @ts-ignore
   this.x = x;
+  // @ts-ignore
   this.y = y;
 }
 

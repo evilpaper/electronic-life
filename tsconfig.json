@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "module": "system",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "DOM"],
+    "allowJs": true,
+    "outDir": "build",
+    "rootDir": "./",
+    "strict": true,
     "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "outDir": "dist"
-  },
-  "include": ["**/*.ts"],
-  "exclude": ["**/*.js"]
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
 }
